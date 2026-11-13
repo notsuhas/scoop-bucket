@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "homepage": "https://envden.theclau.de",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/notsuhas/envden/releases/download/v0.1.0/envden-windows-x64.exe",
+      "hash": "769d3879f2b00173cb7f078143e788cc7bebbfb9968d7472924f9e0769975e54",
+      "bin": [["envden-windows-x64.exe", "envden"]]
+    },
+    "arm64": {
+      "url": "https://github.com/notsuhas/envden/releases/download/v0.1.0/envden-windows-arm64.exe",
+      "hash": "26065585a02f02c6956d09478abcf31782bf4aac940a964f760e1912ab0567e2",
+      "bin": [["envden-windows-arm64.exe", "envden"]]
+    }
+  },
+  "post_install": [
+    "$homeDir = if ($env:ENVDEN_HOME) { $env:ENVDEN_HOME } else { Join-Path $env:USERPROFILE '.envden' }",
+    "New-Item -ItemType Directory -Force $homeDir | Out-Null",
+    "Set-Content -Path (Join-Path $homeDir 'install-method') -Value 'scoop' -NoNewline"
+  ]
+}
