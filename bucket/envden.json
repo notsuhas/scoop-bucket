@@ -1,16 +1,16 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.1",
   "homepage": "https://envden.theclau.de",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/notsuhas/envden/releases/download/v0.1.0/envden-windows-x64.exe",
-      "hash": "769d3879f2b00173cb7f078143e788cc7bebbfb9968d7472924f9e0769975e54",
+      "url": "https://github.com/notsuhas/envden/releases/download/v0.2.1/envden-windows-x64.exe",
+      "hash": "627a536b9ce89939bf51e0109e99f56049fb475ff1a45214831798d00cbffc83",
       "bin": [["envden-windows-x64.exe", "envden"]]
     },
     "arm64": {
-      "url": "https://github.com/notsuhas/envden/releases/download/v0.1.0/envden-windows-arm64.exe",
-      "hash": "26065585a02f02c6956d09478abcf31782bf4aac940a964f760e1912ab0567e2",
+      "url": "https://github.com/notsuhas/envden/releases/download/v0.2.1/envden-windows-arm64.exe",
+      "hash": "374ed982211e049b51d6a7f773f7e6bb6f47d09b510f5631bef21d1068493a10",
       "bin": [["envden-windows-arm64.exe", "envden"]]
     }
   },
